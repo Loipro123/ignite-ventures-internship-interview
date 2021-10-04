@@ -1,0 +1,27 @@
+.service {
+  display: flex;
+  width: 70%;
+  border-radius: 8px;
+  transform: translateY(-30%);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .service {
+    width: 80%;
+  }
+}
+@media (max-width: 815px) {
+  .service {
+    width: 97%;
+  }
+}
+
+@media (max-width: 500px) {
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,49 @@
+.nav--logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1.5rem 1rem;
+  &__bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid white;
+    /* margin-top: -0.6rem; */
+    padding: 5px 10px;
+    display: none;
+    cursor: pointer;
+    i {
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+  &__icon {
+    height: auto;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  &__phone {
+    i {
+      font-size: 1.3rem;
+      margin-right: 0.7rem;
+    }
+    span {
+      font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    &__phone {
+      display: none;
+    }
+    &__bar {
+      display: block;
+    }
+    &__icon {
+      width: 90px;
+    }
+  }
+}

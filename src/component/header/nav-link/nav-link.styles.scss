@@ -1,0 +1,20 @@
+.nav--link {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(186, 190, 191);
+  &__item {
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav--link {
+    display: none;
+  }
+}
+
+.active_page {
+  text-decoration: underline;
+}
